@@ -6,7 +6,8 @@
         <h2>{{player.name}} #{{player.number}}</h2>
       </div>
       <div class="image">
-        <img src = "images\damelillard.jpg">
+        <img src = "../images/norm.jpg">
+        <img :src = "'/images/'+player.image">
       </div>
     </div>
   </div>
