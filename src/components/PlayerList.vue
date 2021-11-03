@@ -1,25 +1,28 @@
 <template>
-<div class="wrapper">
-  <div class="players">
-    <div class="player" v-for="player in this.$root.$data.players" :key="player.name">
-      <div class = "name">
-        <h2>{{player.name}} #{{player.number}}</h2>
-      </div>
-      <div class="image">
-        <img src = "../images/norm.jpg">
-        <img :src = "'/images/'+player.image">
+  <div class="wrapper">
+    <div class="players">
+      <div
+        class="player"
+        v-for="player in this.$root.$data.players"
+        :key="player.name"
+      >
+        <div class="name">
+          <h2><b>{{ player.name }} #{{ player.number }}</b></h2>
+        </div>
+        <div class="image">
+          <img :src="'/images/' + player.image" />
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 <script>
-  export default {
-    name: 'PlayerList',
-    props: {
-      players: Array
-    }
-  }
+export default {
+  name: "PlayerList",
+  props: {
+    players: Array,
+  },
+};
 </script>
 <style scoped>
 .wrapper {
@@ -29,22 +32,22 @@
 }
 
 .players {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
 }
 
 .player {
   margin: 10px;
-  margin-top: 50px;
-  width: 200px;
+  margin-top: 0px;
+  width: 100%;
 }
 
 .player img {
-  border: 2px solid #333;
-  height: 250px;
-  width: 200px;
+  border: 4px solid #333;
+  height: auto;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -55,7 +58,7 @@
 }
 
 .info {
-  background: #F2921D;
+  background: #f2921d;
   color: #000;
   padding: 10px 30px;
   height: 80px;
@@ -66,7 +69,7 @@
 }
 
 .name h2 {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .name p {

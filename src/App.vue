@@ -2,10 +2,15 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">Roster</router-link> |
+      <router-link to="/teamstats">Stats</router-link>
     </div>
     <router-view />
+    <div class="footer">
+      <a href="https://github.com/bryandespain/creative-project3">GitHub</a>
+    </div>
   </div>
+
 </template>
 
 <style>
