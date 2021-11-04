@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">Roster</router-link> |
-      <router-link to="/teamstats">Stats</router-link>
+      <h1>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">Roster</router-link> |
+        <router-link to="/teamstats">Stats</router-link>
+      </h1>
       <img src="/images/49705039608_05586c845f_o.jpg" alt="" />
     </div>
     <router-view />

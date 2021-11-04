@@ -1,29 +1,31 @@
 <template>
   <div>
     <h1>Team News</h1>
-    <img src="\images\damian-lillardtrade.jpg" alt="" />
+    <img clas="dame" src="\images\dame.jpg" alt="" />
 
     <h3>
-    <a href="#"
-      >Lillard struggles early in the season, furthering trade speculations</a
-    >
+      <a href="#"
+        >Lillard struggles early in the season, furthering trade speculations</a
+      >
     </h3>
     <section class="Item-rows">
       <div class="item">
         <img src="\images\blazerstradefornance.jpg" alt="" />
         <h4>
-          <a href="#">Blazers trade DJJ and a first-round pick for Larry Nance Jr.</a>
+          <a href="#">Nance struggles to get minutes early in the season</a>
         </h4>
       </div>
       <div class="item">
-        <img src="\images\norm2.jpg" alt="" />
+        <img src="\images\norm.jpg" alt="" />
         <h4>
-        <a href="#">Powell off to a strong start after recovering from injury</a>
+          <a href="#"
+            >Powell off to a strong start after recovering from injury</a
+          >
         </h4>
       </div>
     </section>
     <img src="\images\seasonpreview.jpeg" alt="" />
-    <h4><a href="#">Blazers contenders or pretenders a season preview</a></h4>
+    <h4><a href="#">Blazers blow out the Clippers 111-92</a></h4>
     <br />
   </div>
 </template>
@@ -115,7 +117,9 @@ h4 {
   text-align: center;
   font-size: 15px;
 }
-
+.dame {
+  width: 80% !important;
+}
 .cart {
   float: right;
   margin-right: 4px;
