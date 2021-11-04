@@ -4,13 +4,13 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">Roster</router-link> |
       <router-link to="/teamstats">Stats</router-link>
+      <img src="/images/49705039608_05586c845f_o.jpg" alt="" />
     </div>
     <router-view />
     <div class="footer">
       <a href="https://github.com/bryandespain/creative-project3">GitHub</a>
     </div>
   </div>
-
 </template>
 
 <style>

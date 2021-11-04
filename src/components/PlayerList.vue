@@ -7,7 +7,9 @@
         :key="player.name"
       >
         <div class="name">
-          <h2><b>{{ player.name }} #{{ player.number }}</b></h2>
+          <h2>
+            <b>{{ player.name }} #{{ player.number }}</b>
+          </h2>
         </div>
         <div class="image">
           <img :src="'/images/' + player.image" />

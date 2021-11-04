@@ -1,19 +1,16 @@
 <template>
   <div>
     <div class="wrapper"></div>
-    <PlayerList :players="players" />
     <HomePage />
   </div>
 </template>
 
 <script>
-import HomePage from "../components/HomePage.vue"
-import PlayerList from "../components/PlayerList.vue";
+import HomePage from "../components/HomePage.vue";
 export default {
   name: "Home",
   components: {
-    PlayerList,
-    HomePage
+    HomePage,
   },
 };
 </script>
